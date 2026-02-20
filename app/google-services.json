@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "254725840663",
+    "project_id": "appnotas-44861",
+    "storage_bucket": "appnotas-44861.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:254725840663:android:7e3588b8b2af43bfb3e152",
+        "android_client_info": {
+          "package_name": "com.example.rutapersonal"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBIm6z6eHsySkCKYuVqJnlLTgp_ZXSOXlg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
