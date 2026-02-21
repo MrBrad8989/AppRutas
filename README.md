@@ -130,9 +130,7 @@ app/src/main/java/com/example/rutapersonal/
 
 ## 🎥 Demo
 
-- **Vídeo de demostración:** _pendiente de publicar_
-
-> Cuando esté disponible, añade aquí el enlace (YouTube, Drive o GitHub Releases).
+- **Vídeo de demostración:** [Link](https://youtube.com/shorts/8H_34uFe3oQ)
 
 ---
 
