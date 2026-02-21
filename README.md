@@ -142,15 +142,6 @@ app/src/main/java/com/example/rutapersonal/
 
 ---
 
-## 👤 Autor
-
-**Remus Sabou**
-
-- GitHub: [MrBrad8989](https://github.com/MrBrad8989)
-- Email: remussabou02@gmail.com
-
----
-
 <div align="center">
 
 Hecho con ❤️ en Kotlin + Compose.
