@@ -1,43 +1,160 @@
-# 1. Gestor de Rutas
+<div align="center">
 
-[cite_start]**Módulo:** PMDM - Programación Multimedia y Dispositivos Móviles
-[cite_start]**Curso:** 2025-2026 
-[cite_start]**Centro:** IES Juan Bosco
-[cite_start]**Alumno/s:** Remus Sabou
-[cite_start]**Fecha:** 20/02/2026
+# 🧭 Gestor de Rutas
 
-## 2. Descripción
-Gestor de Rutas es una aplicación para Android diseñada para amantes del deporte al aire libre. Resuelve el problema de trazar y guardar rutas personales, permitiendo registrar paseos, carreras o rutas en bicicleta. Está dirigida a cualquier usuario que desee llevar un registro de sus recorridos. Las funcionalidades principales incluyen el seguimiento GPS en tiempo real, creación de waypoints con fotografías y exportación/importación de recorridos en formato GPX. [cite_start]Utiliza Jetpack Compose para la interfaz, Room para la base de datos local y OSMDroid para la visualización de mapas. [cite: 279, 280, 281, 282, 283]
+**App Android para registrar, guardar y compartir rutas al aire libre (andar, correr y bici).**
 
-## 3. Características
-La aplicación ha sido desarrollada utilizando un enfoque moderno con las siguientes tecnologías:
-* **UI:** Jetpack Compose (Material Design 3).
-* **Mapas:** OSMDroid para representar la ruta dibujando polilíneas y marcadores.
-* **Almacenamiento Local:** Room Database (con flujos reactivos mediante `Flow`) para guardar el historial de las rutas, puntos geográficos y waypoints.
-* **Ubicación:** `FusedLocationProviderClient` de Google Play Services para obtener latitud, longitud y altitud.
-* [cite_start]**Gestión de archivos:** Generación y lectura de archivos XML nativos para soportar el formato GPX. [cite: 285]
+![Plataforma](https://img.shields.io/badge/Plataforma-Android-3DDC84?logo=android&logoColor=white)
+![Kotlin](https://img.shields.io/badge/Kotlin-2.0.21-7F52FF?logo=kotlin&logoColor=white)
+![UI](https://img.shields.io/badge/UI-Jetpack%20Compose-4285F4?logo=jetpackcompose&logoColor=white)
+![Estado](https://img.shields.io/badge/Estado-Completado-success)
 
-## 4. Funcionalidades implementadas
-* Grabación de rutas en segundo plano con cálculo de distancia, duración y velocidad media.
-* Adición de Waypoints durante la ruta interactuando con la cámara del dispositivo para tomar fotos geolocalizadas.
-* Historial completo de rutas guardadas, con opciones de visualización detallada, renombrado y borrado.
-* Importación y Exportación de las rutas en formato estandarizado GPX (`.gpx`).
-* Compartición de la información del recorrido a través de otras apps instaladas. 
+</div>
 
-## 5. Funcionalidades NO implementadas (trabajo futuro)
-* Sincronización en la nube de los recorridos.
+---
 
-## 6. Video de demostración
-[cite_start]**Enlace al video:** [Pega aquí el enlace de YouTube/Drive/GitHub Releases] 
+## 📌 Información del proyecto
 
-## 7. Permisos solicitados
-[cite_start]Para poder funcionar correctamente, la aplicación declara en su `AndroidManifest.xml` los siguientes permisos: 
-* [cite_start]`android.permission.INTERNET`: Necesario para cargar los "tiles" del mapa de OSMDroid. 
-* `android.permission.ACCESS_FINE_LOCATION`: Para obtener las coordenadas exactas del GPS necesarias para el trazado de la ruta.
-* `android.permission.ACCESS_COARSE_LOCATION`: Para obtener la ubicación general cuando no hay alta precisión.
-* [cite_start]`android.permission.CAMERA`: Para tomar fotografías y asociarlas a los Waypoints creados. 
+| Campo | Valor |
+|---|---|
+| **Módulo** | PMDM · Programación Multimedia y Dispositivos Móviles |
+| **Curso** | 2025-2026 |
+| **Centro** | IES Juan Bosco |
+| **Alumno** | Remus Sabou |
+| **Fecha** | 20/02/2026 |
 
-## 8. Autor
-* [cite_start]**Remus Sabou** - [https://github.com/MrBrad8989] - [remussabou02@gmail.com] 
-* [cite_start]**Última actualización:** 20/02/2026
-* [cite_start]**Estado del proyecto:** Completado - Listo para producción 
+---
+
+## ✨ Descripción
+
+**Gestor de Rutas** es una aplicación Android orientada a personas que practican deporte al aire libre y quieren llevar un registro fiable de sus recorridos.
+
+Permite:
+- 📍 Seguir rutas con GPS en tiempo real.
+- 🧷 Añadir waypoints durante la actividad.
+- 📸 Asociar fotos geolocalizadas a los waypoints.
+- 💾 Guardar el historial localmente.
+- 🔄 Importar y exportar rutas en formato **GPX**.
+- 📤 Compartir recorridos con otras aplicaciones.
+
+---
+
+## 🚀 Funcionalidades implementadas
+
+- **Grabación de rutas en segundo plano** con cálculo de:
+  - distancia total,
+  - duración,
+  - velocidad media.
+- **Creación de waypoints** durante el recorrido.
+- **Captura de fotografías** para enriquecer cada waypoint.
+- **Historial completo de rutas** con:
+  - visualización detallada,
+  - renombrado,
+  - borrado.
+- **Importación y exportación GPX** (`.gpx`) para interoperabilidad.
+- **Compartición de información** del recorrido vía apps externas.
+
+---
+
+## 🧱 Stack tecnológico
+
+### Interfaz y arquitectura
+- **Jetpack Compose** (Material 3)
+- **ViewModel + StateFlow/Flow**
+
+### Ubicación y mapas
+- **FusedLocationProviderClient** (Google Play Services)
+- **OSMDroid** para visualización de mapa, marcadores y polilíneas
+
+### Datos y almacenamiento
+- **Room Database** para rutas, puntos geográficos y waypoints
+- **XML nativo** para lectura/escritura de archivos GPX
+
+### Otras librerías
+- **Coil** para carga de imágenes
+- **Firebase Analytics**
+
+---
+
+## 📱 Requisitos y entorno
+
+- **Android Studio** (recomendado: versión estable reciente)
+- **JDK 11**
+- **SDK de Android:**
+  - `minSdk = 24`
+  - `targetSdk = 35`
+  - `compileSdk = 35`
+
+---
+
+## ⚙️ Instalación y ejecución
+
+1. Clona el repositorio:
+   ```bash
+   git clone <URL_DEL_REPO>
+   cd AppRutas
+   ```
+2. Abre el proyecto en **Android Studio**.
+3. Sincroniza Gradle.
+4. Ejecuta la app en emulador o dispositivo físico con GPS.
+
+> ✅ Recomendación: para probar seguimiento real, usa un dispositivo físico.
+
+---
+
+## 🔐 Permisos solicitados
+
+La app declara los siguientes permisos en `AndroidManifest.xml`:
+
+- `android.permission.INTERNET` → cargar tiles del mapa.
+- `android.permission.ACCESS_FINE_LOCATION` → ubicación precisa para el trazado.
+- `android.permission.ACCESS_COARSE_LOCATION` → ubicación aproximada.
+- `android.permission.CAMERA` → captura de fotos para waypoints.
+
+Además, la cámara está marcada como opcional:
+- `android.hardware.camera` con `required="false"`.
+
+---
+
+## 🗂️ Estructura principal del proyecto
+
+```text
+app/src/main/java/com/example/rutapersonal/
+├── data/               # Room: DAO, DB y repositorio
+├── model/              # Entidades y modelos de dominio
+├── ui/                 # Composables y ViewModels
+└── utlis/              # Utilidades (GPX)
+```
+
+---
+
+## 🎥 Demo
+
+- **Vídeo de demostración:** _pendiente de publicar_
+
+> Cuando esté disponible, añade aquí el enlace (YouTube, Drive o GitHub Releases).
+
+---
+
+## 🛣️ Trabajo futuro
+
+- ☁️ Sincronización en la nube de recorridos.
+- 🧭 Navegación asistida sobre rutas importadas.
+- 📊 Métricas avanzadas por sesión (ritmo por tramo, desnivel, etc.).
+
+---
+
+## 👤 Autor
+
+**Remus Sabou**
+
+- GitHub: [MrBrad8989](https://github.com/MrBrad8989)
+- Email: remussabou02@gmail.com
+
+---
+
+<div align="center">
+
+Hecho con ❤️ en Kotlin + Compose.
+
+</div>
