@@ -20,7 +20,6 @@
 | **Módulo** | PMDM · Programación Multimedia y Dispositivos Móviles |
 | **Curso** | 2025-2026 |
 | **Centro** | IES Juan Bosco |
-| **Alumno** | Remus Sabou |
 | **Fecha** | 20/02/2026 |
 
 ---
