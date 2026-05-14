@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🧭 Gestor de Rutas
+# 🧭 Re-Routes
 
 **App Android para registrar, guardar y compartir rutas al aire libre (andar, correr y bici).**
 
@@ -26,7 +26,7 @@
 
 ## ✨ Descripción
 
-**Gestor de Rutas** es una aplicación Android orientada a personas que practican deporte al aire libre y quieren llevar un registro fiable de sus recorridos.
+**Re-Routes** es una aplicación Android orientada a personas que practican deporte al aire libre y quieren llevar un registro fiable de sus recorridos.
 
 Permite:
 - 📍 Seguir rutas con GPS en tiempo real.
